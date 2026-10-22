@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="refresh" content="1;url=https://miti-no-eki-farm-sales.leathact.workers.dev/">
+  <title>道の駅の柿｜家族用ログイン</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,sans-serif;background:#fff;color:#202820}
+    body{max-width:36rem;margin:12vh auto;padding:24px;font-size:19px;line-height:1.8}
+    h1{font-size:28px}a{display:block;margin-top:24px;padding:16px 24px;background:#285c35;color:#fff;border-radius:12px;text-align:center;font-weight:700;text-decoration:none}
+  </style>
+</head>
+<body>
+  <h1>道の駅の柿</h1>
+  <p>家族用のGoogleログインへ移動します。</p>
+  <p>自動で切り替わらない場合は、下のボタンを押してください。</p>
+  <a id="login" href="https://miti-no-eki-farm-sales.leathact.workers.dev/">Googleログインへ進む</a>
+  <script>
+    const target=new URL('https://miti-no-eki-farm-sales.leathact.workers.dev/');
+    target.hash=window.location.hash;
+    document.getElementById('login').href=target.href;
+    window.location.replace(target.href);
+  </script>
+</body>
+</html>
